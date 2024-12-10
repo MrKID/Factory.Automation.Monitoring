@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Images\arm\a1.png" />
+    <None Remove="Assets\Images\arm\a2.png" />
+    <None Remove="Assets\Images\arm\a3.png" />
+    <None Remove="Assets\Images\arm\a4.png" />
+    <None Remove="Assets\Images\m.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Base\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="S7netplus" Version="0.20.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\arm\a1.png" />
+    <Resource Include="Assets\Images\arm\a2.png" />
+    <Resource Include="Assets\Images\arm\a3.png" />
+    <Resource Include="Assets\Images\arm\a4.png" />
+    <Resource Include="Assets\Images\m.png" />
+  </ItemGroup>
+
+</Project>
